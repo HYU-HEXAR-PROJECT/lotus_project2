@@ -1,0 +1,17 @@
+* Jeong's Diary
+
+** 2014 02 22
+   기본적인 웹페이지의 기본 틀을 잡음. 앞으로 가상머신의 정보를 얻어오는것은 libvirt를 이용할듯함.
+   reference sites:
+   http://libvirt.org/python.html
+   http://shijicheng.info/blog/2012/10/28/libvirt-python-api/
+
+** TODO 
+*** 1. 필수 패키지와 라이브러리의 설치 유무를 체크하는 스크립트 작성
+    dpkg나 yum을 사용하는 방법 위주로 생각해보자
+
+*** 2. 포트포워딩 관련해서 자료 찾기 (iptime을 사용할 경우와 아닐경우 나눠서 찾기)
+    일단 iptime을 사용하지 않는다는 가정하에서 데이터를 찾아보자 iptables관련 글들 
+
+*** 3. Django App 구조에 관하여 다시 생각해보기
+    현재는 users와 web 이라는 두개의 앱으로 분리되어 있지만 이 둘을 합칠지 생각해보자 
