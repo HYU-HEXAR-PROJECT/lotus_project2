@@ -1,7 +1,7 @@
 {% extends "user_base.html" %}
 {% block content %}
-<form class="form-signin" role="form" action="/users/login" method="post" enctype="multipart/form-data">
-  <h2 class="form-signin-heading">Sign in</h2>
+<form class="form-signin" role="form" action="/users/signup" method="post" enctype="multipart/form-data">
+  <h2 class="form-signin-heading">Sign up</h2>
   {% csrf_token %}
   {% if error_msg %}
   <div class="alert alert-warning">
@@ -10,7 +10,8 @@
   </div>
   {% endif %}
   <input name="email" type="email" class="form-control" placeholder="Email address" required="" autofocus="">
+  <input name="user_name" type="text" class="form-control" placeholder="User Name" required="" autofocus="">
   <input name="password" type="password" class="form-control" placeholder="Password" required="">
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
 </form>
 {% endblock %}
